@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2016", // Reasonable JS target
+    "module": "commonjs", // For Node.js backend
+    "rootDir": ".", // Source files start from project root
+    "outDir": "dist", // Compiled files go into dist/
+    "esModuleInterop": true, // Needed for CommonJS compatibility
+    "experimentalDecorators": true, // For sequelize-typescript
+    "emitDecoratorMetadata": true, // For sequelize-typescript
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true, // If you import JSON files
+    "moduleResolution": "node" // For resolving node modules like express, etc.
+  },
+  "include": ["server.ts", "src/**/*"]
+}
